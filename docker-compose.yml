@@ -1,0 +1,9 @@
+services:
+  luxury-nails:
+    build: .
+    container_name: luxury-nails
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./images:/app/images:ro
+    restart: unless-stopped
